@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import estilo from './assets/css/Estilo.module.css'
+import Topo from './assets/parts/Header'
+import {Routes, Route} from 'react-router-dom'
+import Home from './pages/Home';
+import Filme from './pages/Filme'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={estilo.app}>
+      <Topo />
+
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/filme' element={<Filme />}/>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
-
 export default App;

@@ -1,0 +1,52 @@
+.app{
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(248, 250, 252);
+}
+.header{
+  height: 100px;
+  background-color: darkgray;
+  display: flex;
+}
+.logo img{
+  max-width: 100px;
+  float: left;
+}
+.slogan {
+  float: right;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+}
+.lista{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+.item{
+  flex-grow: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item img {
+  width: 200px;
+}
+.titulo{
+  max-width: 200px;
+  height: 60px;
+  vertical-align: middle;
+}
+.titulo a{
+  text-decoration: none;
+  color: black;
+}
+.avatar{
+  max-width: 200px;
+}
